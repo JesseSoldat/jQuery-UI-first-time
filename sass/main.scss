@@ -1,0 +1,14 @@
+@import 'font-awesome';
+// Put any @imports here
+// See Readme for a list of supported ones
+
+body {
+  background: #e2ebf3;
+}
+#hands {
+  background-image: url('../img/hands.png');
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  margin-top: 5%;
+}
