@@ -17,7 +17,18 @@ var _jqueryUi2 = _interopRequireDefault(_jqueryUi);
 
 console.log('Hello, World');
 
+//Makes the globe at the top of the page Draggable
 (0, _jquery2['default'])('#draggable').draggable();
+
+//Makes the hamster Draggable
+(0, _jquery2['default'])('#hamster').draggable();
+
+//Makes the div a Droppable container
+(0, _jquery2['default'])('#drop').droppable({
+  drop: function drop(event) {
+    (0, _jquery2['default'])(this).addClass('dropped').find('p').html('Dropped!');
+  }
+});
 
 },{"jquery":3,"jquery-ui":2,"underscore":4}],2:[function(require,module,exports){
 var jQuery = require('jquery');
