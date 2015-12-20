@@ -26,8 +26,13 @@ console.log('Hello, World');
 //Makes the div a Droppable container
 (0, _jquery2['default'])('#drop').droppable({
   drop: function drop(event) {
-    (0, _jquery2['default'])(this).addClass('dropped').find('p').html('Dropped!');
+    (0, _jquery2['default'])(this).addClass('dropped').find('p').html('Drop the world!');
   }
+});
+
+//Makes the man Resizable
+(0, _jquery2['default'])(function () {
+  (0, _jquery2['default'])("#resizable").resizable();
 });
 
 },{"jquery":3,"jquery-ui":2,"underscore":4}],2:[function(require,module,exports){

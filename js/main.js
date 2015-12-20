@@ -17,7 +17,14 @@ $('#drop').droppable({
     $(this)
       .addClass('dropped')
       .find('p')
-      .html('Dropped!');
+      .html('Drop the world!');
   }
 });
+
+//Makes the man Resizable
+$(function() {
+    $( "#resizable" ).resizable();
+  });
+
+
 

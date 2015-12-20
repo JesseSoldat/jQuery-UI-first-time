@@ -2085,32 +2085,50 @@ h1 {
   font-size: 3em;
   margin: 2% 0 0 5%; }
 
-#hands {
-  background-image: url("../img/hands.png");
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  margin: 5%;
-  border: 3px solid black;
-  border-radius: 3px; }
+.floatLeft {
+  float: left;
+  width: 50%; }
+  .floatLeft #hands {
+    background-image: url("../img/hands.png");
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin: 5%;
+    border: 3px solid black;
+    border-radius: 3px; }
+  .floatLeft #container {
+    background-image: url("../img/container.png");
+    width: 400px;
+    height: 250px;
+    background-repeat: no-repeat;
+    margin: 5% 0 2% 5%; }
 
-#container {
-  background-image: url("../img/container.png");
-  width: 400px;
-  height: 250px;
-  background-repeat: no-repeat;
-  margin: 5% 0 2% 5%; }
-
-#drop {
-  width: 300px;
-  height: 300px;
-  border: 5px solid red;
-  margin: 5% 0 2% 5%; }
-
-.dropped {
-  border: 15px solid green;
-  background-color: green;
-  font-size: 3em;
-  color: yellow; }
+.floatRight {
+  float: right;
+  width: 50%; }
+  .floatRight #drop {
+    width: 300px;
+    height: 300px;
+    border: 5px solid red;
+    margin: 5% 0 2% 5%; }
+    .floatRight #drop p {
+      padding: 1% 2%; }
+  .floatRight .dropped {
+    border: 15px solid green;
+    background-color: green;
+    font-size: 3em;
+    color: yellow;
+    padding: 0; }
+  .floatRight #resizable {
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+    border: 2px solid yellow; }
+    .floatRight #resizable h3 {
+      text-align: center;
+      margin: 0; }
+    .floatRight #resizable #man {
+      width: 80%;
+      padding: 5px; }
 
 /*# sourceMappingURL=main.css.map */
